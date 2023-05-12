@@ -48,6 +48,8 @@ public class BootstrapData implements CommandLineRunner {
 
         anastasSaved.getBooks().add(dddSaved);
         rodSaved.getBooks().add(noEJBSaved);
+        dddSaved.getAuthors().add(anastasSaved);
+        noEJBSaved.getAuthors().add(rodSaved);
 
         Publisher publisher = new Publisher();
         publisher.setPublisherName("My Publisher");
